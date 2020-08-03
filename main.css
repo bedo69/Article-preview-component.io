@@ -1,0 +1,172 @@
+/* Mobile First Design */
+
+body{
+    font-size: 32px;
+    font-family: 'Inter', sans-serif ;
+    font-weight: 300; 
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom; 
+    background-size: contain;
+    
+}
+
+.container{
+    width: 350px;
+    margin: 10px auto;
+    justify-content:center ;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+.img-box{
+    margin: 40px 30px;
+    height: 100%;
+    position: relative;
+ }
+
+.button {
+    background-color:white;
+    border-radius:100px;
+    height: 10px;
+	border:none;
+	cursor:pointer;
+    position: absolute;
+    width:60px;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px;
+    top:90%;
+    left:10%;
+    display:flex;
+    flex-direction: row; 
+} 
+.picture{
+    max-width: 100%;
+    width: 300px; 
+    box-shadow: 5px 30px 30px -15px hsl(240, 18%, 77%);
+}
+
+.text-box{
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+.text{
+    font-size: 1.2rem;
+    background-image: url(images/pattern-quotes.svg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    color:hsl(240, 38%, 20%); 
+    margin: 20px;
+    text-align: center;
+}
+
+p{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+span{
+    font-weight: 100;
+    font-size: 1.2rem;
+    color: hsl(240, 18%, 77%);
+}
+.attribution { 
+   
+    font-size: 11px; 
+    text-align: center; 
+  
+}
+.attribution a { color: hsl(228, 45%, 44%) }
+
+/* Media Queries min-width 768px */ 
+
+@media screen and (min-width: 1300px){
+    body{
+        font-size: 32px;
+        font-family: 'Inter', sans-serif ;
+        font-weight: 300px; 
+        padding: 0;
+        margin: auto;
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/pattern-curve.svg);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 50%;
+     }
+  
+    .container{
+        display:flex ;
+        flex-direction: row-reverse;
+        margin:20px auto;
+        padding-top: 30px;
+        align-items: center;
+        background-image: url(images/pattern-bg.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 55%;
+        width:85%;
+        position: relative;
+        
+  }
+.img-box{
+    align-items: center;
+    position: relative;
+   }
+
+  .picture{
+    box-shadow: 5px 30px 30px -15px hsl(240, 18%, 77%);
+    position: relative;
+    width: 1500px;
+  }
+
+  .text-box{
+   
+}
+ 
+ .text{
+    background-image: url(images/pattern-quotes.svg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 70px -90px;
+    color:hsl(240, 38%, 20%); 
+    margin: 80px;
+    text-align: justify;
+    width: 90%;
+    position: relative;
+    
+}
+.button {
+    
+    top:95%;
+    left:15%;
+}
+p{
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align:bottom center; 
+    display: flex;
+    position: absolute;
+    margin-top: 700px;
+  }
+
+}
